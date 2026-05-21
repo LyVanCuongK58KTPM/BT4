@@ -23,7 +23,8 @@ Lớp: 58KTPM
      <img width="1048" height="396" alt="image" src="https://github.com/user-attachments/assets/d2abf294-b7d7-4ebc-bb8d-8e39c1c342bc" />
    + Cấu hình dịch vụ cloudflare trong docker-compose.yml:
     <img width="1227" height="391" alt="image" src="https://github.com/user-attachments/assets/16d84d68-7e80-4a7d-87fc-e035ad561f4b" />
-
+   + Cấp lại quyền truy cập file trên máy host:
+     <img width="917" height="45" alt="image" src="https://github.com/user-attachments/assets/37ad26d9-2eae-4242-9932-22c78adef0b9" />
 - n8n:
   <img width="1361" height="304" alt="image" src="https://github.com/user-attachments/assets/3c3efe59-4061-4e05-9889-2f720f356a43" />
 
@@ -33,20 +34,20 @@ Lớp: 58KTPM
 
   - Kiểm tra truy cập các sub-domain:
     + Truy cập sub-domain2 để quan sát xem cơ sở dữ liệu chưa có bảng nào:
+      <img width="1076" height="447" alt="image" src="https://github.com/user-attachments/assets/0bf0ff13-be05-48b7-8113-57bd18534e06" />
+    + Truy cập sub-domain1 để cài đặt wordpress:
+      <img width="1892" height="710" alt="image" src="https://github.com/user-attachments/assets/2f782793-a7cc-4604-8645-920f63fdfe08" />
+    + Truy cập sub-domain2 để quan sát xem cơ sở dữ liệu có những bảng dữ liệu nào sau khi cài wp:
+    <img width="1876" height="878" alt="image" src="https://github.com/user-attachments/assets/5f927e52-cdfe-4fac-8636-c94096b517b7" />
+    + Tạo 1 bài viết trong wordpress giới thiệu về bản thân sinh viên: thông tin cá nhân, sở thích, ... bài viết có thể chứa hình ảnh, âm thanh, video, ...
+      <img width="1170" height="842" alt="image" src="https://github.com/user-attachments/assets/622fa405-9cab-4996-b139-e66464d84989" />
+    + Tạo 1 bài viết trong wordpress giới thiệu về nhữn kiến thức mà em đã học được ở môn **Phát triển ứng dụng với mã nguồn mở**
+  <img width="1816" height="958" alt="image" src="https://github.com/user-attachments/assets/1a4df845-8121-42e5-8bbd-e32f6a3f564e" />
     
-4. Yêu cầu: sau khi có 5 service này trong file docker-compose.yml :
-- pull các images về và chạy chúng (up -d)
-- Kiểm tra các service đã running ok (ko bị restart liên tục)
-- Cấu hình cloudflare tunnel add router để public wordpress lên sub-domain1 (dùng để truy cập wordpress)
-- Cấu hình cloudflare tunnel add router để public Phpmyadmin lên sub-domain2 (dùng để truy cập phpmyadmin)
-- Cấu hình cloudflare tunnel add router để public n8n này lên sub-domain3 (dùng để truy cập và cấu hình n8n)
-- Truy cập sub-domain2 để quan sát xem cơ sở dữ liệu chưa có bảng nào!
-- Truy cập sub-domain1 để cài đặt wordpress (làm theo hướng dẫn của wordpress)
-- Truy cập sub-domain2 để quan sát xem cơ sở dữ liệu có những bảng dữ liệu nào sau khi cài wp
-- Tạo 1 bài viết trong wordpress giới thiệu về bản thân sinh viên: thông tin cá nhân, sở thích, ... bài viết có thể chứa hình ảnh, âm thanh, video, ...
-- Tạo 1 bài viết trong wordpress giới thiệu về nhữn kiến thức mà em đã học được ở môn **Phát triển ứng dụng với mã nguồn mở**
 - Truy cập sub-domain3 để cấu hình n8n:
-  + tạo tài khoản admin : nhớ điền đúng email
+  + tạo tài khoản admin : nhớ điền đúng email:
+  <img width="1904" height="926" alt="image" src="https://github.com/user-attachments/assets/702f2f7d-0920-45c2-9134-ab108eb10e30" />
+
   + Send me a Licence key, bước này điền đủ thông tin, làm chậm sẽ thấy mục gửi License key về mail (n8n sẽ gửi email KEY cho dùng), check email để lấy KEY
   + Activate License key: vào trang chủ => SETTING (góc dưới trái) => Usage and plan => Enter activation key: paste key từ email vào đây => Activate => sẽ nhận đc thông báo (góc dưới phải) Your Registered Community Edition has been successfully activated.
   + Create workflow  (home page => overview => Create workflow)
