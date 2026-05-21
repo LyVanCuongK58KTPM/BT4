@@ -16,10 +16,14 @@ Lớp: 58KTPM
    <img width="545" height="385" alt="image" src="https://github.com/user-attachments/assets/6e8719e4-f226-4b23-92c9-08b13591deba" />
  - Cấu hình Tunel cloudflare để truy cập vào các dịch vụ bằng các subdomain ( em sử dụng lệnh cli thay cho việc thao tác đồ họa trên dashboard của cloudflare):
    + Tạo tunel của 3 sub-domain:
+     <img width="1443" height="136" alt="image" src="https://github.com/user-attachments/assets/7fe94cbf-4587-4862-a0ec-40fd6eb461a9" />
+
    <img width="1469" height="209" alt="image" src="https://github.com/user-attachments/assets/0d0dea82-9448-4795-a1e1-f9f5e79cef50" />
-   + Lấy chuỗi token để nạp vào docker compose của dịch vụ cloudflare:
-     <img width="1462" height="73" alt="image" src="https://github.com/user-attachments/assets/7087a113-1442-4ea3-93a1-1a674a63d101" />
-    <img width="1469" height="703" alt="image" src="https://github.com/user-attachments/assets/28702a16-484b-43a3-8b39-70c3ced4dc6a" />
+   + Thêm chuỗi id tunel vào config.yml:
+     <img width="1048" height="396" alt="image" src="https://github.com/user-attachments/assets/d2abf294-b7d7-4ebc-bb8d-8e39c1c342bc" />
+   + Cấu hình dịch vụ cloudflare trong docker-compose.yml:
+    <img width="1227" height="391" alt="image" src="https://github.com/user-attachments/assets/16d84d68-7e80-4a7d-87fc-e035ad561f4b" />
+
 - n8n:
   <img width="1361" height="304" alt="image" src="https://github.com/user-attachments/assets/3c3efe59-4061-4e05-9889-2f720f356a43" />
 
@@ -28,6 +32,7 @@ Lớp: 58KTPM
      <img width="1462" height="320" alt="image" src="https://github.com/user-attachments/assets/41accd0e-d714-48e7-bce1-fbc319c70cdc" />
 
   - Kiểm tra truy cập các sub-domain:
+    + Truy cập sub-domain2 để quan sát xem cơ sở dữ liệu chưa có bảng nào:
     
 4. Yêu cầu: sau khi có 5 service này trong file docker-compose.yml :
 - pull các images về và chạy chúng (up -d)
